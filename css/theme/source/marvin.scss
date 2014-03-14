@@ -1,0 +1,53 @@
+/**
+ * Default theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300);
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: transparent;
+
+// Primary/body text
+$mainFont: 'Titillium Web', sans-serif;
+$mainFontSize: 36px;
+//$mainColor: #eee;
+
+// Headings
+//$headingMargin: 0 0 20px 0;
+$headingFont: 'Titillium Web', sans-serif;
+//$headingColor: #eee;
+$headingLineHeight: 1;
+$headingLetterSpacing: auto;
+//$headingTextTransform: uppercase;
+$headingTextShadow: none;
+$heading1TextShadow: none;
+
+// Links and actions
+//$linkColor: #13DAEC;
+//$linkColorHover: lighten( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: inherit;
+$selectionColor: #fff;
+
+// Background generator
+@mixin bodyBackground() {
+    background-image: url('../../img/marvin_bg.jpg');
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal section img {
+  background: none;
+  border: none;
+}
