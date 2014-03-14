@@ -137,3 +137,6 @@ body {
 .reveal section img {
   background: none;
   border: none; }
+
+.reveal .grey {
+  color: #666; }
